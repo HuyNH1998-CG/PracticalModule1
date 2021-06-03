@@ -1,21 +1,18 @@
 function findMinusWord(string) {
     let count = 0
-    debugger
+    string = prompt()
+    console.log(string)
     let toFind = string.split("")
     for (let i = 0; i < toFind.length; i++) {
         if (toFind[i] === "a") {
             count++
-        }
-        if (toFind[i] === "o") {
+        } else if (toFind[i] === "o") {
             count++
-        }
-        if (toFind[i] === "e") {
+        } else if (toFind[i] === "e") {
             count++
-        }
-        if (toFind[i] === "u") {
+        } else if (toFind[i] === "u") {
             count++
-        }
-        if (toFind[i] === "i") {
+        } else if (toFind[i] === "i") {
             count++
         }
     }
@@ -25,7 +22,7 @@ function findMinusWord(string) {
     return count
 }
 
-let exampleString = "aoeiukasdhkzx"
-console.log(exampleString)
+// let exampleString = "aoeiukasdhkzx"
+// console.log(exampleString)
 
-console.log("Minus words in string: " + findMinusWord(exampleString))
+console.log("Minus words in string: " + findMinusWord())

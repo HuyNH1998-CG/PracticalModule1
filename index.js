@@ -1,18 +1,18 @@
-var a = 5
-var b = 8
+let a = 5
+let b = 8
 
 function oneVariableEquation(numA, numB) {
-    let equationVariable = 0
-    if (numA == 0) {
-        if (numB == 0) {
+    let equationVariable;
+    if (numA === 0) {
+        if (numB === 0) {
             equationVariable = "Phương trình vô số nghiệm"
-        } else if (numB != 0) {
+        } else {
             equationVariable = "Phương trình vô nghiệm"
         }
-    } else if (numA != 0) {
+    } else {
         equationVariable = (-numB / numA)
     }
     return equationVariable
 }
 
-console.log(oneVariableEquation(a, b))
+console.log(`Nghiệm: ${a} / ${b} ` + oneVariableEquation(a,b))
